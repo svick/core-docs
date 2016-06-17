@@ -1,6 +1,6 @@
 # Exception Class and Properties
 
-The [Exception](https://msdn.microsoft.com/library/system.exception) class is the base class from which exceptions inherit. Most exception objects are instances of some derived class of **Exception**, but you can throw any object that derives from the [Object](https://msdn.microsoft.com/library/system.object) class as an exception. Note that not all languages support throwing and catching objects that do not derive from **Exception**. In almost all cases, it is recommended to throw and catch only **Exception** objects.
+The [Exception](https://msdn.microsoft.com/library/system.exception) class is the base class from which exceptions inherit. Exception objects are instances of **Exception** or some derived class of **Exception**.
 
 The **Exception** class has several properties that make understanding an exception easier. These properties include:
 
@@ -18,11 +18,11 @@ The **Exception** class has several properties that make understanding an except
 
 - The [Message](https://msdn.microsoft.com/library/system.exception.message) property.
 
-  This property provides details about the cause of an exception. The Message is in the language specified by the [Thread.CurrentUICulture](https://msdn.microsoft.com/library/system.threading.thread.currentuiculture) property of the thread that throws the exception.
+  This property provides details about the cause of an exception.
 
 - The [HelpLink](https://msdn.microsoft.com/library/system.exception.helplink) property.
 
-  This property can hold a URL (or URN) to a help file that provides extensive information about the cause of an exception.
+  This property can hold a URL to a help file that provides extensive information about the cause of an exception.
 
 - The [Data](https://msdn.microsoft.com/library/system.exception.data) property
 

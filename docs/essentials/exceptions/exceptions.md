@@ -1,17 +1,17 @@
 # Handling and throwing exceptions
 
-Applications must be able to handle errors that occur during execution in a consistent manner. The common language runtime provides a model for notifying applications of errors in a uniform way. All .NET Framework operations indicate failure by throwing exceptions.
+Applications must be able to handle errors that occur during execution in a consistent manner. The Common Language Runtime provides a model for notifying applications of errors in a uniform way. .NET operations indicate failure by throwing exceptions.
 
 ## Changes for .NET Core
 Exception handling for .NET Core works the same as .NET Framework with the following exceptions.
 - You no longer should (or can) add a serialization constructor.
 - The SystemException and ApplicationException classes have been removed.
 
-## Exceptions in the .NET Framework
+## Exceptions in .NET
 
-An exception is any error condition or unexpected behavior that is encountered by an executing program. Exceptions can be raised because of a fault in your code or in code that you call (such as a shared library), unavailable operating system resources, unexpected conditions the common language runtime encounters (such as code that cannot be verified), and so on. Your application can recover from some of these conditions, but not from others. Although you can recover from most application exceptions, you cannot recover from most runtime exceptions.
+An exception is any error condition or unexpected behavior that is encountered by an executing program. Exceptions can be raised because of a fault in your code or in code that you call (such as a shared library), unavailable operating system resources, unexpected conditions the common language runtime encounters, and so on. Your application can recover from some of these conditions, but not from others. Although you can recover from most application exceptions, you cannot recover from most runtime exceptions.
 
-In the .NET Framework, an exception is an object that inherits from the [System.Exception](https://msdn.microsoft.com/en-us/library/system.exception) class. An exception is thrown from an area of code where a problem has occurred. The exception is passed up the stack until the application handles it or the program terminates.
+In .NET, an exception is an object that inherits from the [System.Exception](https://msdn.microsoft.com/en-us/library/system.exception) class. An exception is thrown from an area of code where a problem has occurred. The exception is passed up the stack until the application handles it or the program terminates.
 
 ## Exceptions vs. traditional error-handling methods
 
@@ -21,11 +21,9 @@ Traditionally, a language's error-handling model relied on either the language's
 
 - Does not require any particular language syntax for handling exceptions, but allows each language to define its own syntax.
 
-- Allows exceptions to be thrown across process and even machine boundaries.
-
 Exceptions offer several advantages over other methods of error notification, such as return codes. Failures do not go unnoticed. Invalid values do not continue to propagate through the system. You do not have to check return codes. Finally, exception-handling code can be easily added to increase program reliability.
 
-Because execution threads routinely traverse managed and unmanaged blocks of code, the runtime can throw or catch exceptions in either managed or unmanaged code. Unmanaged code can include both C++-style SEH Exceptions and COM-based HRESULTS.
+Because execution threads routinely traverse managed and unmanaged blocks of code, the runtime can throw or catch exceptions in either managed or unmanaged code.
 
 ## How the runtime manages exceptions
 
@@ -43,7 +41,7 @@ The exception information table represents four types of exception handlers for 
 
 - A user-filtered handler that runs user-specified code to determine whether the exception should be handled by the associated handler or should be passed to the next protected block.
 
-Each language implements these exception handlers according to its specifications. For example, Visual Basic provides access to the user-filtered handler through a variable comparison (using the **When** keyword) in the **catch** statement; C# does not implement the user-filtered handler.
+Each language implements these exception handlers according to its specifications.
 
 When an exception occurs, the runtime begins a two-step process:
 
@@ -55,7 +53,7 @@ When an exception occurs, the runtime begins a two-step process:
 
 1. If a match occurs, the runtime creates an Exception object that describes the exception. The runtime then executes all **finally** or **fault** statements between the statement where the exception occurred and the statement that handles the exception. Note that the order of exception handlers is important; the innermost exception handler is evaluated first. Also note that exception handlers can access the local variables and local memory of the routine that catches the exception, but any intermediate values at the time the exception is thrown are lost.
 
-  If no match occurs in the current method, the runtime searches each caller of the current method, and it continues this path all the way up the stack. If no caller has a match, the runtime lets the debugger access the exception. If the debugger does not attach to the exception, the runtime raises the [AppDomain.UnhandledException](https://msdn.microsoft.com/en-us/library/system.appdomain.unhandledexception) event. If there are no listeners for this event, the runtime dumps a stack trace and ends the application.
+  If no match occurs in the current method, the runtime searches each caller of the current method, and it continues this path all the way up the stack. If no caller has a match, the runtime lets the debugger access the exception. If the debugger does not attach to the exception, <!-- TODO: restore when dotnet/corefx#6398 has been fixed: the runtime raises the [AppDomain.UnhandledException](https://msdn.microsoft.com/en-us/library/system.appdomain.unhandledexception) event. If there are no listeners for this event, --> the runtime dumps a stack trace and ends the application.
 
 ## Filtering runtime exceptions
 
@@ -69,7 +67,7 @@ C#
 ```C#
 catch (FileNotFoundException e)
 {
-    Console.WriteLine("[Data File Missing] {0}", e);
+    Console.WriteLine($"[Data File Missing] {e}");
 }
 ```
 
