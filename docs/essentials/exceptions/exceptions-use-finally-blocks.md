@@ -2,6 +2,8 @@
 
 When an exception occurs, execution stops and control is given to the closest exception handler. This often means that lines of code you expect to always be called are not executed. Some resource cleanup, such as closing a file, must always be executed even if an exception is thrown. To accomplish this, you can use a Finally block. A Finally block is always executed, regardless of whether an exception is thrown.
 
+To perform cleanup of IDisposable … TODO
+
 The following code example uses a Try/Catch block to catch an [ArgumentOutOfRangeException](https://msdn.microsoft.com/library/system.argumentoutofrangeexception). The `Main` method creates two arrays and attempts to copy one to the other. The action generates an **ArgumentOutOfRangeException** and the error is written to the console. The Finally block executes regardless of the outcome of the copy action.
 
 ## Example
