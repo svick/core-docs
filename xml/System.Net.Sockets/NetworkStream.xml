@@ -1352,13 +1352,13 @@
           The number of bytes to read from the <see cref="T:System.Net.Sockets.NetworkStream" /> .
         </param>
         <summary>Reads data from the <see cref="T:System.Net.Sockets.NetworkStream" />.</summary>
-        <returns>The number of bytes read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</returns>
+        <returns>The number of bytes read from the <see cref="T:System.Net.Sockets.NetworkStream" />. 0 if the socket is closed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method reads data into the `buffer` parameter and returns the number of bytes successfully read. If no data is
- available for reading, the <xref:System.Net.Sockets.NetworkStream.Read%2A> method returns 0. The
+ This method reads data into the `buffer` parameter and returns the number of bytes successfully read. If the socket is
+ closed, the <xref:System.Net.Sockets.NetworkStream.Read%2A> method returns 0. The
  <xref:System.Net.Sockets.NetworkStream.Read%2A> operation reads as much data as is available, up to the number of bytes
  specified by the `size` parameter. If the remote host shuts down the connection, and all available data has been
  received, the <xref:System.Net.Sockets.NetworkStream.Read%2A> method completes immediately and return zero bytes.
