@@ -1400,7 +1400,7 @@ Att1="content5"
         <!--a comment-->  
         <?xml-stylesheet type='text/xsl' href='test.xsl'?>  
     </Child>  
-    <Child>ccc<GrandChild>Text</GrandChild> ddd</Child>  
+    <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
 </Root>");  
 IEnumerable<XNode> nodes =  
     from node in xmlTree.Elements("Child").DescendantNodes()  
@@ -1434,7 +1434,7 @@ foreach (XNode node in nodes)
         <!--a comment-->  
         <?xml-stylesheet type='text/xsl' href='test.xsl'?>  
     </Child>  
-    <Child>ccc<GrandChild>Text</GrandChild> ddd</Child>  
+    <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
 </Root>  
   
 Dim nodes As IEnumerable(Of XNode) = _  
@@ -1480,7 +1480,7 @@ XElement xmlTree = XElement.Parse(
         <!--a comment-->  
         <?xml-stylesheet type='text/xsl' href='test.xsl'?>  
     </Child>  
-    <Child>ccc<GrandChild>Text</GrandChild> ddd</Child>  
+    <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
 </Root>");  
 IEnumerable<XNode> nodes =  
     from node in xmlTree.Elements(aw + "Child").DescendantNodes()  
@@ -1518,7 +1518,7 @@ Module Module1
                 <!--a comment-->  
                 <?xml-stylesheet type='text/xsl' href='test.xsl'?>  
             </Child>  
-            <Child>ccc<GrandChild>Text</GrandChild> ddd</Child>  
+            <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
         </Root>  
   
         Dim nodes As IEnumerable(Of XNode) = _  
@@ -2670,8 +2670,8 @@ Next
 ```csharp  
   
                 XElement xmlTree = XElement.Parse(  
-    @"<Root><Child>aaa<GrandChild>Text</GrandChild> bbb</Child>" +  
-    @"<Child>ccc<GrandChild>Text</GrandChild> ddd</Child></Root>");  
+    @"<Root><Child>aaa<GrandChild>Text</GrandChild>bbb</Child>" +  
+    @"<Child>ccc<GrandChild>Text</GrandChild>ddd</Child></Root>");  
 IEnumerable<XNode> nodes = xmlTree.Elements("Child").Nodes();  
   
 foreach (XNode node in nodes)  
@@ -2692,8 +2692,8 @@ foreach (XNode node in nodes)
   
                 Dim xmlTree As XElement = _  
     <Root>  
-        <Child>aaa<GrandChild>Text</GrandChild> bbb</Child>  
-        <Child>ccc<GrandChild>Text</GrandChild> ddd</Child>  
+        <Child>aaa<GrandChild>Text</GrandChild>bbb</Child>  
+        <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
     </Root>  
   
 Dim nodes = xmlTree.<Child>.Nodes()  

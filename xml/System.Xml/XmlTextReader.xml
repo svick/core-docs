@@ -3253,7 +3253,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
 ```  
 <a name="bob" age="123">  
-  <x/> abc<y/>  
+  <x/>abc<y/>  
 </a>  
 <b>  
  ...  
