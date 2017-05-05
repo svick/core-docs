@@ -1150,7 +1150,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="T:System.DBNull" /> that can be assigned to this instance of the <see cref="T:System.Data.SqlTypes.SqlDecimal" />class.</summary>
+        <summary>Represents a <see cref="T:System.DBNull" /> that can be assigned to this instance of the <see cref="T:System.Data.SqlTypes.SqlDecimal" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

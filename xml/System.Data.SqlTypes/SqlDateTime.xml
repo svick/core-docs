@@ -321,7 +321,7 @@
   
  -or-  
   
- <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is a null reference (<see langword="Nothing " />in Visual Basic)  
+ <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is a null reference (<see langword="Nothing " /> in Visual Basic)  
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>

@@ -274,11 +274,11 @@ myObject = myCollection.Item[index];
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index " />is less than zero.  
+          <paramref name="index " /> is less than zero.  
   
  -or-  
   
- <paramref name="index " />is equal to or greater than the number of items in the collection.</exception>
+ <paramref name="index " /> is equal to or greater than the number of items in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnValidate">

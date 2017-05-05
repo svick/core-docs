@@ -1792,7 +1792,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
 ```  
 <a name="bob" age="123">  
-   <x/>abc<y/>  
+   <x/> abc<y/>  
  </a>  
  <b>  
 ...  

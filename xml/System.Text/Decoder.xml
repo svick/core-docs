@@ -402,7 +402,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing " />in Visual Basic .NET).</exception>
+          <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing " /> in Visual Basic .NET).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> is less than zero.</exception>
         <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for fuller explanation)  

@@ -1700,7 +1700,7 @@
       <Parameters />
       <Docs>
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure to <see cref="T:System.Data.SqlTypes.SqlDouble" />.</summary>
-        <returns>A new <see langword="SqlDouble " />equal to the value of this <see cref="T:System.Data.SqlTypes.SqlSingle" />.</returns>
+        <returns>A new <see langword="SqlDouble " /> equal to the value of this <see cref="T:System.Data.SqlTypes.SqlSingle" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

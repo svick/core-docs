@@ -1142,7 +1142,7 @@
         <param name="name">The name of an XML attribute.</param>
         <summary>Determines whether an XML attribute name indicates an XML namespace.</summary>
         <returns>
-          <see langword="true " />if the XML attribute name indicates an XML namespace; otherwise, <see langword="false" />.</returns>
+          <see langword="true " /> if the XML attribute name indicates an XML namespace; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2345,7 +2345,7 @@
       <Docs>
         <param name="value">A string to translate into a <see cref="T:System.DateTime" /> class object.</param>
         <summary>Produces a <see cref="T:System.DateTime" /> object from an input string.</summary>
-        <returns>A <see cref="T:System.DateTime" />object.</returns>
+        <returns>A <see cref="T:System.DateTime" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

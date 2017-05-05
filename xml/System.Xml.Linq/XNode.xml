@@ -1452,7 +1452,7 @@ foreach (XElement el in elements)
         <Root>Text content.  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
-            <Child3>child3 content</Child3>More text content.  
+            <Child3>child3 content</Child3> More text content.  
             <Child4>child4 content</Child4>  
             <Child5>child5 content</Child5>  
         </Root>  
@@ -1541,7 +1541,7 @@ foreach (XElement el in elements)
         <Root>Text content.  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
-            <Child3>child3 content</Child3>More text content.  
+            <Child3>child3 content</Child3> More text content.  
             <Child4>child4 content</Child4>  
             <Child5>child5 content</Child5>  
         </Root>  
@@ -1645,7 +1645,7 @@ foreach (XElement el in elements)
         <Root>Text content.  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
-            <Child3>child3 content</Child3>More text content.  
+            <Child3>child3 content</Child3> More text content.  
             <Child4>child4 content</Child4>  
             <Child5>child5 content</Child5>  
         </Root>  
@@ -1735,7 +1735,7 @@ foreach (XElement el in elements)
         <Root>Text content.  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
-            <Child3>child3 content</Child3>More text content.  
+            <Child3>child3 content</Child3> More text content.  
             <Child4>child4 content</Child4>  
             <Child5>child5 content</Child5>  
         </Root>  
@@ -1906,7 +1906,7 @@ else
         <Root>Text content.  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
-            <Child3>child3 content</Child3>More text content.  
+            <Child3>child3 content</Child3> More text content.  
             <Child4>child4 content</Child4>  
             <Child5>child5 content</Child5>  
         </Root>  
@@ -1999,7 +1999,7 @@ else
         <Root>Text content.  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
-            <Child3>child3 content</Child3>More text content.  
+            <Child3>child3 content</Child3> More text content.  
             <Child4>child4 content</Child4>  
             <Child5>child5 content</Child5>  
         </Root>  
@@ -2097,7 +2097,7 @@ while ((node = node.NextNode) != null);
   
                 Dim xmlTree As XElement = _   
         <Root>  
-            <Child1>1</Child1>Some Text  
+            <Child1>1</Child1> Some Text  
             <Child2>2  
                 <GrandChild>GrandChild Content</GrandChild>  
             </Child2>  
@@ -2398,7 +2398,7 @@ while ((node = node.PreviousNode) != null);
   
                 Dim xmlTree As XElement = _  
     <Root>  
-        <Child1>1</Child1>Some Text<Child2>2  
+        <Child1>1</Child1> Some Text<Child2>2  
             <GrandChild>GrandChild Content</GrandChild>  
         </Child2>  
         <!--a comment-->  

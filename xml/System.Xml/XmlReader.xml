@@ -7115,7 +7115,7 @@ reader.ReadToFollowing("item", "urn:1");
   
 ```  
 <a name="bob" age="123">  
- <x/>abc<y/>  
+ <x/> abc<y/>  
 </a>  
 <b>  
 ...  
