@@ -24,7 +24,7 @@ This topic discusses best practices for reliable sessions.
 
 ## Setting MaxTransferWindowSize
 
-Reliable sessions in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] use a transfer window to hold messages on the client and service. The configurable property <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize%2A> indicates how many messages the transfer window can hold.
+Reliable sessions in Windows Communication Foundation (WCF) use a transfer window to hold messages on the client and service. The configurable property <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize%2A> indicates how many messages the transfer window can hold.
 
 On the sender, this indicates how many messages the transfer window can hold while waiting for acknowledgements; on the receiver, it indicates how many messages to buffer for the service.
 
@@ -54,7 +54,7 @@ We recommended that you use the same `MaxTransferWindowSize` on both the sender 
 
 *Flow control* is a mechanism that ensures that the sender and receiver keep pace with each other, that is, the messages are consumed and acted upon as fast as they're produced. The transfer window size on the client and service ensures that the sender and receiver are within a reasonable window of synchronization.
 
-We highly recommended that you set the property <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.FlowControlEnabled%2A> to `true` when you're using a reliable session between a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client and a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.
+We highly recommended that you set the property <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.FlowControlEnabled%2A> to `true` when you're using a reliable session between a WCF client and a WCF service.
 
 ## Setting MaxPendingChannels
 

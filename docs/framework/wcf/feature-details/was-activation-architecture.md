@@ -38,14 +38,14 @@ This topic itemizes and discusses the components of the Windows Process Activati
  ![WAS Architecture](../../../../docs/framework/wcf/feature-details/media/wasarchitecture.gif "WASArchitecture")  
   
 ### Listener Adapters  
- Listener adapters are individual Windows services that implement the network communication logic used to receive messages using the network protocol on which they listen. The following table lists the listener adapters for [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] protocols.  
+ Listener adapters are individual Windows services that implement the network communication logic used to receive messages using the network protocol on which they listen. The following table lists the listener adapters for Windows Communication Foundation (WCF) protocols.  
   
 |Listener adapter service name|Protocol|Notes|  
 |-----------------------------------|--------------|-----------|  
-|W3SVC|http|Common component that provides HTTP activation for both IIS 7.0 and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].|  
+|W3SVC|http|Common component that provides HTTP activation for both IIS 7.0 and WCF.|  
 |NetTcpActivator|net.tcp|Depends on the NetTcpPortSharing service.|  
 |NetPipeActivator|net.pipe||  
-|NetMsmqActivator|net.msmq|For use with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]-based Message Queuing applications.|  
+|NetMsmqActivator|net.msmq|For use with WCF-based Message Queuing applications.|  
 |NetMsmqActivator|msmq.formatname|Provides backwards compatibility with existing Message Queuing applications.|  
   
  Listener adapters for specific protocols are registered during installation in the applicationHost.config file, as shown in the following XML example.  

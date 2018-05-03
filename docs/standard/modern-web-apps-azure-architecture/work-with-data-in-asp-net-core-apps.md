@@ -4,11 +4,6 @@ description: Architect Modern Web Applications with ASP.NET Core and Azure | wor
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Working with Data in ASP.NET Core Apps
 
@@ -201,7 +196,7 @@ The first DbContext is the \_catalogContext and the second DbContext is within t
 > - **EF Core: Related Data**  
 > <https://docs.microsoft.com/ef/core/querying/related-data>
 > - **Avoid Lazy Loading Entities in ASPNET Applications**  
-> <http://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
+> <https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
 
 ## EF Core or micro-ORM?
 
@@ -265,7 +260,7 @@ Another complexity NoSQL databases must deal with is versioning. When an object'
 
 It's possible in NoSQL databases to store multiple versions of objects, something fixed schema relational databases typically do not support. However, in this case your application code will need to account for the existence of previous versions of objects, adding additional complexity.
 
-NoSQL databases typically do not enforce [ACID](http://en.wikipedia.org/wiki/ACID), which means they have both performance and scalability benefits over relational databases. They're well-suited to extremely large datasets and objects that are not well-suited to storage in normalized table structures. There is no reason why a single application cannot take advantage of both relational and NoSQL databases, using each where it is best suited.
+NoSQL databases typically do not enforce [ACID](https://en.wikipedia.org/wiki/ACID), which means they have both performance and scalability benefits over relational databases. They're well-suited to extremely large datasets and objects that are not well-suited to storage in normalized table structures. There is no reason why a single application cannot take advantage of both relational and NoSQL databases, using each where it is best suited.
 
 ## Azure DocumentDB
 

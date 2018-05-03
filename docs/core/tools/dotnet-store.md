@@ -4,8 +4,8 @@ description: The 'dotnet store' command stores the specified assemblies in the r
 author: bleroy
 ms.author: mairaw
 ms.date: 08/14/2017
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.technology: dotnet-cli
 ms.workload: 
   - dotnetcore
@@ -38,7 +38,7 @@ The *package store manifest file* is an XML file that contains the list of packa
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-The runtime identifier to target.
+The [runtime identifier](../rid-catalog.md) to target.
 
 ## Optional options
 

@@ -1,10 +1,6 @@
 ---
 title: "C# Operators"
-ms.date: 03/09/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
+ms.date: 04/04/2018
 f1_keywords: 
   - "cs.operators"
 helpviewer_keywords: 
@@ -22,9 +18,6 @@ helpviewer_keywords:
   - "keywords [C#], operators"
   - "arithmetic operators [C#]"
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
-caps.latest.revision: 40
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # C# Operators
 C# provides many operators, which are symbols that specify which operations (math, indexing, function call, etc.) to perform in an expression. You can [overload](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md) many operators to change their meaning when applied to a user-defined type.  
@@ -58,7 +51,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [unchecked](../../../csharp/language-reference/keywords/unchecked.md) – disables overflow checking for integer operations. This is the default compiler behavior.  
   
- [default(T)](../../../csharp/programming-guide/statements-expressions-operators/default-value-expressions.md) – returns the default value of type T: `null` for reference types, zero for numeric types, and zero/`null` filled in members for struct types.  
+ [default(T)](../../../csharp/programming-guide/statements-expressions-operators/default-value-expressions.md) – produces the default value of type T.  
   
  [delegate](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) – declares and returns a delegate instance.  
   
@@ -96,7 +89,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [x / y](../../../csharp/language-reference/operators/division-operator.md) – division. If the operands are integers, the result is an integer truncated toward zero (for example, `-7 / 2 is -3`).  
   
- [x % y](../../../csharp/language-reference/operators/modulus-operator.md) – modulus. If the operands are integers, this returns the remainder of dividing x by y.  If `q = x / y` and `r = x % y`, then `x = q * y + r`.  
+ [x % y](../../../csharp/language-reference/operators/remainder-operator.md) – remainder. If the operands are integers, this returns the remainder of dividing x by y.  If `q = x / y` and `r = x % y`, then `x = q * y + r`.  
   
 ## Additive Operators  
  These operators have higher precedence than the next section and lower precedence than the previous section.  
@@ -182,7 +175,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [x /= y](../../../csharp/language-reference/operators/division-assignment-operator.md) – division assignment. Divide the value of `x` by the value of `y`, store the result in `x`, and return the new value.  
   
- [x %= y](../../../csharp/language-reference/operators/modulus-assignment-operator.md) – modulus assignment. Divide the value of `x` by the value of `y`, store the remainder in `x`, and return the new value.  
+ [x %= y](../../../csharp/language-reference/operators/remainder-assignment-operator.md) – remainder assignment. Divide the value of `x` by the value of `y`, store the remainder in `x`, and return the new value.  
   
  [x &= y](../../../csharp/language-reference/operators/and-assignment-operator.md) – AND assignment. AND the value of `y` with the value of `x`, store the result in `x`, and return the new value.  
   

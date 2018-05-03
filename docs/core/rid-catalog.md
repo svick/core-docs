@@ -4,8 +4,8 @@ description: Learn about the Runtime IDentifier (RID) and how RIDs are used in .
 author: mairaw
 ms.author: mairaw
 ms.date: 09/07/2017
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.workload: 
   - dotnetcore
 ---
@@ -15,7 +15,7 @@ RID is short for *Runtime IDentifier*. RID values are used to identify target pl
 They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, or `osx.10.12-x64`.
 For the packages with native dependencies, the RID designates on which platforms the package can be restored.
 
-RIDs can be set in the `<RuntimeIdentifier>` element of your project file. They're also used via the `--runtime` option with the following [.NET Core CLI commands](./tools/index.md):
+A single RID can be set in the `<RuntimeIdentifier>` element of your project file. Multiple RIDs can be defined as a semicolon-delimited list in the project file's `<RuntimeIdentifiers>` element. They're also used via the `--runtime` option with the following [.NET Core CLI commands](./tools/index.md):
 
 - [dotnet build](./tools/dotnet-build.md)
 - [dotnet clean](./tools/dotnet-clean.md)

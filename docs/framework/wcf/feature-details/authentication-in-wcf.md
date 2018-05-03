@@ -21,11 +21,11 @@ ms.workload:
   - "dotnet"
 ---
 # Authentication in WCF
-The following topics show a number of different mechanisms in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] that provide authentication, for example, Windows authentication, X.509 certificates, and user name and passwords.  
+The following topics show a number of different mechanisms in Windows Communication Foundation (WCF) that provide authentication, for example, Windows authentication, X.509 certificates, and user name and passwords.  
   
 ## In This Section  
  [How to: Use the ASP.NET Membership Provider](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-membership-provider.md)  
- ASP.NET features include a membership and role provider, a database to store user name/password pairs for authentication, and user roles for authorization. This topic explains how [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services can use the same database to authenticate and authorize users.  
+ ASP.NET features include a membership and role provider, a database to store user name/password pairs for authentication, and user roles for authorization. This topic explains how WCF services can use the same database to authenticate and authorize users.  
   
  [How to: Use a Custom User Name and Password Validator](../../../../docs/framework/wcf/feature-details/how-to-use-a-custom-user-name-and-password-validator.md)  
  Demonstrates how to integrate a custom user name/password validator.  

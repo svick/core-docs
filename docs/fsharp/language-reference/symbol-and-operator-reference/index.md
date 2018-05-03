@@ -1,17 +1,13 @@
 ---
 title: Symbol and Operator Reference (F#)
 description: Learn about the symbols and operators that are used in the F# programming language.
-keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
-ms.date: 05/16/2016
+ms.date: 04/04/2018
 ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
+ms.prod: dotnet-fsharp
 ms.devlang: fsharp
-ms.assetid: ab453800-d4d0-4a11-9d55-2b358d56af27 
 ---
-
 # Symbol and Operator Reference
 
 > [!NOTE]
@@ -30,9 +26,9 @@ The following table describes symbols used in the F# language, provides links to
 |`"""`|[Strings](../strings.md)|Delimits a verbatim text string. Differs from `@"..."` in that a you can indicate a quotation mark character by using a single quote in the string.|
 |`#`|[Compiler Directives](../compiler-directives.md)<br /><br />[Flexible Types](../flexible-types.md)|<ul><li>Prefixes a preprocessor or compiler directive, such as `#light`.<br /></li><li>When used with a type, indicates a *flexible type*, which refers to a type or any one of its derived types.<br /></li><ul/>|
 |`$`|No more information available.|<ul><li>Used internally for certain compiler-generated variable and function names.<br /></li><ul/>|
-|`%`|[Arithmetic Operators](arithmetic-operators.md)<br /><br />[Code Quotations](../code-quotations.md)|<ul><li>Computes the integer modulus.<br /></li><li>Used for splicing expressions into typed code quotations.<br /></li><ul/>|
+|`%`|[Arithmetic Operators](arithmetic-operators.md)<br /><br />[Code Quotations](../code-quotations.md)|<ul><li>Computes the integer remainder.<br /></li><li>Used for splicing expressions into typed code quotations.<br /></li><ul/>|
 |`%%`|[Code Quotations](../code-quotations.md)|<ul><li>Used for splicing expressions into untyped code quotations.<br /></li><ul/>|
-|`%?`|[Nullable Operators](nullable-operators.md)|<ul><li>Computes the integer modulus, when the right side is a nullable type.<br /></li><ul/>|
+|`%?`|[Nullable Operators](nullable-operators.md)|<ul><li>Computes the integer remainder, when the right side is a nullable type.<br /></li><ul/>|
 |`&`|[Match Expressions](../match-expressions.md)|<ul><li>Computes the address of a mutable value, for use when interoperating with other languages.<br /></li><li>Used in AND patterns.<br /></li><ul/>|
 |`&&`|[Boolean Operators](boolean-operators.md)|<ul><li>Computes the Boolean AND operation.<br /></li><ul/>|
 |`&&&`|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise AND operation.<br /></li><ul/>|
