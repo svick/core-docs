@@ -1,23 +1,9 @@
 ---
 title: "Configuring HTTP and HTTPS"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "configuring HTTP [WCF]"
 ms.assetid: b0c29a86-bc0c-41b3-bc1e-4eb5bb5714d4
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring HTTP and HTTPS
 WCF services and clients can communicate over HTTP and HTTPS. The HTTP/HTTPS settings are configured by using Internet Information Services (IIS) or through the use of a command-line tool. When a WCF service is hosted under IIS HTTP or HTTPS settings can be configured within IIS (using the inetmgr.exe tool). If a WCF service is self-hosted, HTTP or HTTPS settings are configured by using a command-line tool.  
@@ -28,7 +14,7 @@ WCF services and clients can communicate over HTTP and HTTPS. The HTTP/HTTPS set
   
  When running [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool. [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] automatically installs this tool. When running [!INCLUDE[wxp](../../../../includes/wxp-md.md)], you can download the tool at [Windows XP Service Pack 2 Support Tools](http://go.microsoft.com/fwlink/?LinkId=88606). For more information, see [Httpcfg Overview](http://go.microsoft.com/fwlink/?LinkId=88605).  
   
- When running [!INCLUDE[wv](../../../../includes/wv-md.md)]or Windows 7, you configure these settings with the Netsh.exe tool.  
+ When running [!INCLUDE[wv](../../../../includes/wv-md.md)] or Windows 7, you configure these settings with the Netsh.exe tool.  
   
 ## Configuring Namespace Reservations  
  Namespace reservation assigns the rights for a portion of the HTTP URL namespace to a particular group of users. A reservation gives those users the right to create services that listen on that portion of the namespace. Reservations are URL prefixes, meaning that the reservation covers all sub-paths of the reservation path. Namespace reservations permit two ways to use wildcards. The HTTP Server API documentation describes the [order of resolution between namespace claims that involve wildcards](http://go.microsoft.com/fwlink/?LinkId=94841).  

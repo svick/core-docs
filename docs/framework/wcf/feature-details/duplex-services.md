@@ -1,24 +1,10 @@
 ---
 title: "Duplex Services"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: "05/09/2018"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 396b875a-d203-4ebe-a3a1-6a330d962e95
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Duplex Services
 A duplex service contract is a message exchange pattern in which both endpoints can send messages to the other independently. A duplex service, therefore, can send messages back to the client endpoint, providing event-like behavior. Duplex communication occurs when a client connects to a service and provides the service with a channel on which the service can send messages back to the client. Note that the event-like behavior of duplex services only works within a session.  
@@ -61,14 +47,19 @@ HTTP could not register URL
 htp://+:80/Temporary_Listen_Addresses/<guid> because TCP port 80 is being used by another application.  
 ```  
   
- The following sample code shows how to specify the client endpoint address in code.  
+ The following sample code shows how to specify the client endpoint address programmatically.
   
-```  
+```csharp  
 WSDualHttpBinding binding = new WSDualHttpBinding();  
 EndpointAddress endptadr = new EndpointAddress("http://localhost:12000/DuplexTestUsingCode/Server");  
 binding.ClientBaseAddress = new Uri("http://localhost:8000/DuplexTestUsingCode/Client/");  
 ```  
-  
+```vb
+Dim binding As New WSDualHttpBinding()
+Dim endptadr As New EndpointAddress("http://localhost:12000/DuplexTestUsingCode/Server")
+binding.ClientBaseAddress = New Uri("http://localhost:8000/DuplexTestUsingCode/Client/")  
+```
+
  The following sample code shows how to specify the client endpoint address in configuration.  
   
 ```xml  

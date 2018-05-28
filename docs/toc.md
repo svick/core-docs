@@ -215,10 +215,11 @@
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
 ## [What's new in C#](csharp/whats-new/index.md)
-### [What's new in C# 7.2](csharp/whats-new/csharp-7-2.md)
-### [What's new in C# 7.1](csharp/whats-new/csharp-7-1.md)
-### [What's new in C# 7.0](csharp/whats-new/csharp-7.md)
-### [What's new in C# 6](csharp/whats-new/csharp-6.md)
+### [C# 7.3](csharp/whats-new/csharp-7-3.md)
+### [C# 7.2](csharp/whats-new/csharp-7-2.md)
+### [C# 7.1](csharp/whats-new/csharp-7-1.md)
+### [C# 7.0](csharp/whats-new/csharp-7.md)
+### [C# 6](csharp/whats-new/csharp-6.md)
 ### [C# Version History](csharp/whats-new/csharp-version-history.md)
 ### [Relationships between language and framework](csharp/whats-new/relationships-between-language-and-library.md)
 <!-- End What's New -->
@@ -231,8 +232,8 @@
 ### [Tuples](csharp/tuples.md)
 ### [Deconstructing tuples and other types](csharp/deconstruct.md)
 ### [Interfaces](csharp/programming-guide/interfaces/index.md)
-#### [Methods](csharp/methods.md)
-#### [Lambda Expressions](csharp/lambda-expressions.md)
+### [Methods](csharp/methods.md)
+### [Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)
 ### [Discards](csharp/discards.md)
@@ -285,7 +286,12 @@
 ### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
 ### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
 ### [Get Started with with the .NET Core CLI](fsharp/get-started/get-started-command-line.md)
-<!--## [Tutorials](fsharp/tutorials/index.md)-->
+
+## [F# style guide](fsharp/style-guide/index.md)
+### [F# code formatting guidelines](fsharp/style-guide/formatting.md)
+### [F# coding conventions](fsharp/style-guide/conventions.md)
+### [F# component design guidelines](fsharp/style-guide/component-design-guidelines.md)
+
 ## Tutorials
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
 ### [Type Providers](fsharp/tutorials/type-providers/index.md)
@@ -1108,5 +1114,16 @@
 ## [Walkthroughs](visual-basic/walkthroughs.md)
 
 <!-- End of VB Content -->
+
+<!-- ML.NET Content -->
+# [ML.NET Guide](machine-learning/index.md)
+## [Tutorials](machine-learning/tutorials/index.md)
+### [Sentiment Analysis (Classification)](machine-learning/tutorials/sentiment-analysis.md)
+### [Taxi Fare Predictor (Regression)](machine-learning/tutorials/taxi-fare.md)
+## [Resources](machine-learning/resources/index.md)
+### [Machine Learning Glossary](machine-learning/resources/glossary.md)
+### [Machine Learning Basics](machine-learning/resources/basics.md)
+
+<!-- End ML.NET Content -->
 
 # [Samples and Tutorials](samples-and-tutorials/index.md)
