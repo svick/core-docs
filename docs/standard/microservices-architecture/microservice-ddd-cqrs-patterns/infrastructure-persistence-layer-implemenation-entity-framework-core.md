@@ -394,7 +394,7 @@ public abstract class BaseSpecification<T> : ISpecification<T>
 }
 ```
 
-The following specification loads a single basket entity given either the basket’s ID or the ID of the buyer to whom the basket belongs. It will [eager load](https://docs.microsoft.com/en-us/ef/core/querying/related-data) the basket’s Items collection.
+The following specification loads a single basket entity given either the basket’s ID or the ID of the buyer to whom the basket belongs. It will [eager load](https://docs.microsoft.com/ef/core/querying/related-data) the basket’s Items collection.
 
 ```csharp
 // SAMPLE QUERY SPECIFICATION IMPLEMENTATION
@@ -465,5 +465,5 @@ Although we don't recommended to return IQueryable from a repository, it’s per
     
 
 >[!div class="step-by-step"]
-[Previous] (infrastructure-persistence-layer-design.md)
-[Next] (nosql-database-persistence-infrastructure.md)
+[Previous](infrastructure-persistence-layer-design.md)
+[Next](nosql-database-persistence-infrastructure.md)

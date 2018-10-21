@@ -8,7 +8,7 @@ ms.custom: "updateeachrelease"
 ---
 # Install the .NET Framework on Windows 10 and Windows Server 2016
 
-The .NET Framework is required to run many applications on Windows. The instructions in this article should help you install the .NET Framework versions that you need. The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) is the latest available version.
+The .NET Framework is required to run many applications on Windows. The instructions in this article should help you install the .NET Framework versions that you need. The [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) is the latest available version.
 
 You may have arrived on this page after trying to run an application and seeing a dialog on your machine similar to the following one:
 
@@ -18,14 +18,16 @@ You may have arrived on this page after trying to run an application and seeing 
 
 The .NET Framework 4.7.2 is included with:
 
+* [Windows 10 October 2018 Update](https://support.microsoft.com/help/4028685/windows-10-get-the-update)
+
 * [Windows 10 April 2018 Update](https://www.microsoft.com/software-download/windows10)
 
 > [!div class="button"]
 [Download .NET Framework 4.7.2](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
 
-The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) can be used to run applications built for the .NET Framework 4.0 through 4.7.1.
+The [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) can be used to run applications built for the .NET Framework 4.0 through 4.7.1.
 
-You can install the [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) on:
+You can install the [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) on:
 
 * Windows 10 Fall Creators Update (version 1709)
 * Windows 10 Creators Update (version 1703)
@@ -60,7 +62,7 @@ The .NET Framework 3.5 supports apps built for the .NET Framework 1.0 through 3.
 
 - You cannot install an earlier version of the .NET Framework on your machine if a later version is already installed.
 
-- 4.x versions of the .NET Framework can be used to run applications built for the .NET Framework 4.0 through that version. For example, .NET Framework 4.7 can be used to run applications built for the .NET Framework 4.0 through 4.7. The latest version (the .NET Framework 4.7.1) can be used to run applications built will all versions of the .NET Framework starting with 4.0.
+- 4.x versions of the .NET Framework can be used to run applications built for the .NET Framework 4.0 through that version. For example, .NET Framework 4.7 can be used to run applications built for the .NET Framework 4.0 through 4.7. The latest version (the .NET Framework 4.7.2) can be used to run applications built with all versions of the .NET Framework starting with 4.0.
 
 For a list of all the versions of the .NET Framework available to download, see the [.NET Downloads](https://www.microsoft.com/net/download?utm_source=ms-docs&utm_medium=referral) page.
 

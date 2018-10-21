@@ -10,11 +10,11 @@ ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
 
 If you have any I/O-bound needs (such as requesting data from a network or accessing a database), you'll want to utilize asynchronous programming.  You could also have CPU-bound code, such as performing an expensive calculation, which is also a good scenario for writing async code.
 
-C# has a language-level asynchronous programming model which allows for easily writing asynchronous code without having to juggle callbacks or conform to a library which supports asynchrony. It follows what is known as the [Task-based Asynchronous Pattern (TAP)](https://msdn.microsoft.com/library/hh873175.aspx).
+C# has a language-level asynchronous programming model which allows for easily writing asynchronous code without having to juggle callbacks or conform to a library which supports asynchrony. It follows what is known as the [Task-based Asynchronous Pattern (TAP)](../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
 
 ## Basic Overview of the Asynchronous Model
 
-The core of async programming are the `Task` and `Task<T>` objects, which model asynchronous operations.  They are supported by the `async` and `await` keywords.  The model is fairly simple in most cases: 
+The core of async programming is the `Task` and `Task<T>` objects, which model asynchronous operations.  They are supported by the `async` and `await` keywords.  The model is fairly simple in most cases: 
 
 For I/O-bound code, you `await` an operation which returns a `Task` or `Task<T>` inside of an `async` method.
 
@@ -113,7 +113,7 @@ The following examples demonstrate various ways you can write async code in C#. 
 
 ### Extracting Data from a Network
 
-This snippet downloads the HTML from www.dotnetfoundation.org and counts the number of times the string ".NET" occurs in the HTML.  It uses ASP.NET MVC to define a web controller method which performs this task, returning the number.
+This snippet downloads the HTML from the homepage at [www.dotnetfoundation.org](https://www.dotnetfoundation.org) and counts the number of times the string ".NET" occurs in the HTML.  It uses ASP.NET MVC to define a web controller method which performs this task, returning the number.
 
 > [!NOTE]
 > If you plan on doing HTML parsing in production code, don't use regular expressions. Use a parsing library instead.
@@ -127,7 +127,7 @@ public async Task<int> GetDotNetCountAsync()
 {
     // Suspends GetDotNetCountAsync() to allow the caller (the web server)
     // to accept another request, rather than blocking on this one.
-    var html = await _httpClient.GetStringAsync("http://dotnetfoundation.org");
+    var html = await _httpClient.GetStringAsync("https://dotnetfoundation.org");
 
     return Regex.Matches(html, @"\.NET").Count;
 }
@@ -141,7 +141,7 @@ private readonly HttpClient _httpClient = new HttpClient();
 private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
 {
     // Capture the task handle here so we can await the background task later.
-    var getDotNetFoundationHtmlTask = _httpClient.GetStringAsync("http://www.dotnetfoundation.org");
+    var getDotNetFoundationHtmlTask = _httpClient.GetStringAsync("https://www.dotnetfoundation.org");
 
     // Any other work on the UI thread can be done here, such as enabling a Progress Bar.
     // This is important to do here, before the "await" call, so that the user

@@ -17,7 +17,7 @@ The identity element allows a client developer to specify at design time the exp
     <certificate encodedValue="String"/>  
     <certificateReference findValue="String"   
        isChainIncluded="Boolean"  
-       storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"storeName="  
+       storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
        storeLocation="LocalMachine/CurrentUser"  
        X509FindType= Enumeration./>  
     <dns value="String"/>  
@@ -42,14 +42,14 @@ The identity element allows a client developer to specify at design time the exp
 |dns|Specifies the DNS of an X.509 certificate used to authenticate a service. This element contains an attribute `value` that is a string, and contains the actual identity.|  
 |rsa|Specifies the value of the RSA field of an X.509 certificate used to authenticate a service to a client. This element contains an attribute `value` that is a string, and contains the actual identity|  
 |servicePrincipalName|Specifies a server principal name (SPN) identity, which is the principal name used by a client to uniquely identify an instance of a service. This element contains an attribute `value` that is a string, and contains the actual principal name. This element is of type <xref:System.ServiceModel.Configuration.ServicePrincipalNameElement>.|  
-|userPrincipalName|Specifies a user principal name (UPN) identity, which is the logon name type of a user on a network. The user principal name consists of the user object name used in Active Directory, followed by the at symbol (@) and then, typically, the Domain Name System parent domain. For example, Jeff in the Fabrikam.com domain tree might have the user principal name [jeff@fabrikam.com](mailto:jeffsmith@fabrikam.com).  This element contains an attribute `value` that is a string, and contains the actual principal name. This element is of type <xref:System.ServiceModel.Configuration.UserPrincipalNameElement>.|  
+|userPrincipalName|Specifies a user principal name (UPN) identity, which is the logon name type of a user on a network. The user principal name consists of the user object name used in Active Directory, followed by the at symbol (\@) and then, typically, the Domain Name System parent domain. For example, Jeff in the Fabrikam.com domain tree might have the user principal name [jeff@fabrikam.com](mailto:jeffsmith@fabrikam.com).  This element contains an attribute `value` that is a string, and contains the actual principal name. This element is of type <xref:System.ServiceModel.Configuration.UserPrincipalNameElement>.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
 |[\<custom>](../../../../../docs/framework/configure-apps/file-schema/wcf/custom.md)|Specifies a custom peer resolver for a netPeerTcpBinding.|  
-|[\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017)|Configures different types of endpoints.|  
+|[\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017)|Configures different types of endpoints.|  
 |[\<issuer>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuer.md)|Specifies the Security Token Service (STS) for the federated service.|  
 |[\<issuerMetadata>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuermetadata.md)|Specifies the metadata endpoint for the Security Token Service (STS) of a federated service.|  
 |[\<issuedTokenParameters>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenparameters.md)|Defines parameters for an issued token in a custom binding.|  

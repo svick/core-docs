@@ -66,8 +66,7 @@ using (SqlConnection connection = new SqlConnection(
 > [!NOTE]
 >  Do not call `Close` or `Dispose` on a `Connection`, a `DataReader`, or any other managed object in the `Finalize` method of your class. In a finalizer, only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](../../../../docs/standard/garbage-collection/index.md).  
   
-> [!NOTE]
->  Login and logout events will not be raised on the server when a connection is fetched from or returned to the connection pool. This is because the connection is not actually closed when it is returned to the connection pool. For more information, see [Audit Login Event Class](http://msdn2.microsoft.com/library/ms190260.aspx) and [Audit Logout Event Class](http://msdn2.microsoft.com/library/ms175827.aspx) in SQL Server Books Online.  
+For more info about the events associated with opening and closing connections, see [Audit Login Event Class](/sql/relational-databases/event-classes/audit-login-event-class) and [Audit Logout Event Class](/sql/relational-databases/event-classes/audit-logout-event-class) in the SQL Server documentation.  
   
 ## Removing Connections  
  The connection pooler removes a connection from the pool after it has been idle for approximately 4-8 minutes, or if the pooler detects that the connection with the server has been severed. Note that a severed connection can be detected only after attempting to communicate with the server. If a connection is found that is no longer connected to the server, it is marked as invalid. Invalid connections are removed from the connection pool only when they are closed or reclaimed.  
@@ -119,7 +118,7 @@ using (SqlConnection connection = new SqlConnection(
 ```  
   
 ## Application Roles and Connection Pooling  
- After a SQL Server application role has been activated by calling the `sp_setapprole` system stored procedure, the security context of that connection cannot be reset. However, if pooling is enabled, the connection is returned to the pool, and an error occurs when the pooled connection is reused. For more information, see the Knowledge Base article, "[SQL application role errors with OLE DB resource pooling](http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q229564)."  
+ After a SQL Server application role has been activated by calling the `sp_setapprole` system stored procedure, the security context of that connection cannot be reset. However, if pooling is enabled, the connection is returned to the pool, and an error occurs when the pooled connection is reused. For more information, see the Knowledge Base article, "[SQL application role errors with OLE DB resource pooling](https://support.microsoft.com/default.aspx?scid=KB;EN-US;Q229564)."  
   
 ### Application Role Alternatives  
  We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md).  
@@ -128,4 +127,4 @@ using (SqlConnection connection = new SqlConnection(
  [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)  
  [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)  
  [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

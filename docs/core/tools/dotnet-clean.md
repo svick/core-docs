@@ -3,9 +3,9 @@ title: dotnet clean command - .NET Core CLI
 description: The dotnet clean command cleans the current directory.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/13/2017
+ms.date: 05/25/2018
 ---
-# dotnet-clean
+# dotnet clean
 
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 

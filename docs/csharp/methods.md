@@ -108,7 +108,7 @@ The following example defines a class (which is a reference type) named `SampleR
 <a name="byref"></a>
 ### Passing parameters by reference ###
 
-You pass a parameter by reference when you want to change the value of an argument in a method and want to refect that change when control returns to the calling method. To pass a parameter by reference, you use the [`ref`](language-reference/keywords/ref.md) or [`out`](language-reference/keywords/out-parameter-modifier.md) keyword. You can also pass a value by reference to avoid copying but still prevent modifications using the [`in`](language-reference/keywords/in-parameter-modifier.md) keyword.
+You pass a parameter by reference when you want to change the value of an argument in a method and want to reflect that change when control returns to the calling method. To pass a parameter by reference, you use the [`ref`](language-reference/keywords/ref.md) or [`out`](language-reference/keywords/out-parameter-modifier.md) keyword. You can also pass a value by reference to avoid copying but still prevent modifications using the [`in`](language-reference/keywords/in-parameter-modifier.md) keyword.
 
 The following example is identical to the previous one, except the value is passed by reference to the `ModifyValue` method. When the value of the parameter is modified in the `ModifyValue` method, the change in value is reflected when control returns to the caller.
 
@@ -123,7 +123,7 @@ Passing a reference-type parameter allows you to change the value of the referen
 <a name="paramarray"></a>
 ### Parameter arrays ###
 
-Sometimes, the requirement that you specify the exact number of arguments to your method is restrictive. By using the `params` keyword to indicate that a parameter is a parameter array, you allow your method to be called with a variable number of arguments. The parameter tagged with the `params` keyword must must be an array type, and it must be the last parameter in the method's parameter list.
+Sometimes, the requirement that you specify the exact number of arguments to your method is restrictive. By using the `params` keyword to indicate that a parameter is a parameter array, you allow your method to be called with a variable number of arguments. The parameter tagged with the `params` keyword must be an array type, and it must be the last parameter in the method's parameter list.
 
 A caller can then invoke the method in either of three ways:
 
@@ -290,12 +290,12 @@ For more information, see [Iterators](programming-guide/concepts/iterators.md).
 
 ## See also ##
 
-[Access Modifiers](language-reference/keywords/access-modifiers.md)   
-[Static Classes and Static Class Members](programming-guide/classes-and-structs/static-classes-and-static-class-members.md)   
-[Inheritance](programming-guide/classes-and-structs/inheritance.md)   
-[Abstract and Sealed Classes and Class Members](programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)   
-[params](language-reference/keywords/params.md)   
-[out](language-reference/keywords/out-parameter-modifier.md)   
-[ref](language-reference/keywords/ref.md)   
-[in](language-reference/keywords/in-parameter-modifier.md)   
-[Passing Parameters](programming-guide/classes-and-structs/passing-parameters.md)
+- [Access Modifiers](language-reference/keywords/access-modifiers.md)   
+- [Static Classes and Static Class Members](programming-guide/classes-and-structs/static-classes-and-static-class-members.md)   
+- [Inheritance](programming-guide/classes-and-structs/inheritance.md)   
+- [Abstract and Sealed Classes and Class Members](programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)   
+- [params](language-reference/keywords/params.md)   
+- [out](language-reference/keywords/out-parameter-modifier.md)   
+- [ref](language-reference/keywords/ref.md)   
+- [in](language-reference/keywords/in-parameter-modifier.md)   
+- [Passing Parameters](programming-guide/classes-and-structs/passing-parameters.md)

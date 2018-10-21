@@ -5,6 +5,7 @@ hide_bc: true
 title: .NET Documentation
 description: Learn how to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
 ms.custom: "updateeachrelease"
+ms.date: "06/21/2018"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -28,7 +29,7 @@ ms.custom: "updateeachrelease"
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netcore-2.0">
+                <a href="/dotnet/api/?view=netcore-2.1">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -389,13 +390,14 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/images/hub/net-docs-cloud-2.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-cloud-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/azure/cloud-services/cloud-services-dotnet-get-started">
-                                                    <h3>Azure Cloud Services and ASP.NET</h3>
-                                                    <p>Learn to configure, monitor, and scale your cloud services in Azure.</p>
+                                                <a href="/azure/storage/">
+                                                    <h3>Azure Storage</h3>
+                                                    <p>Learn about Azure Storage, and how to create applications using Azure
+                                                        blobs, tables, queues, and files.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -416,26 +418,6 @@ ms.custom: "updateeachrelease"
                                                     <h3>Using F# on Azure</h3>
                                                     <p>Learn how to use various Azure services in F# such as Azure Storage,
                                                         Cloud Services, and Azure Functions.</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/images/hub/net-docs-cloud-4.svg" alt="" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <a href="/azure/storage/">
-                                                    <h3>Azure Storage</h3>
-                                                    <p>Learn about Azure Storage, and how to create applications using Azure
-                                                        blobs, tables, queues, and files.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -603,7 +585,7 @@ ms.custom: "updateeachrelease"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://www.visualstudio.com/vs/game-development">
+                                                <a href="https://visualstudio.microsoft.com/vs/game-development">
                                                     <h3>Game Development with Visual Studio</h3>
                                                     <p>Write and debug your games using your game engine of choice with Visual
                                                         Studio.

@@ -55,8 +55,9 @@ DoWork();
 ## Lambda expressions  
  Lambda expressions represent "inline methods" that have no name but can have input parameters and multiple statements. They are used extensively in LINQ to pass arguments to methods. Lambda expressions are compiled to either delegates or expression trees depending on the context in which they are used. For more information, see [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
   
-## Expression trees  
- Expression trees enable expressions to be represented as data structures. They are used extensively by LINQ providers to translate query expressions into code that is meaningful in some other context, such as a SQL database. For more information, see [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b).  
+## Expression trees
+
+Expression trees enable expressions to be represented as data structures. They are used extensively by LINQ providers to translate query expressions into code that is meaningful in some other context, such as a SQL database. For more information, see [Expression Trees (C#)](../concepts/expression-trees/index.md).
   
 ## Expression body definitions
 
@@ -65,10 +66,11 @@ C# supports *expression-bodied members*, which allow you to supply a concise exp
 ## Remarks  
  Whenever a variable, object property, or object indexer access is identified from an expression, the value of that item is used as the value of the expression. An expression can be placed anywhere in C# where a value or object is required, as long as the expression ultimately evaluates to the required type.  
 
-## See also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
- [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
- [Types](../../../csharp/programming-guide/types/index.md)  
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+- [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
+- [Types](../../../csharp/programming-guide/types/index.md)  
+- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

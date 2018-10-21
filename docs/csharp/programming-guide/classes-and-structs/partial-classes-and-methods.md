@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 804cecb7-62db-4f97-a99f-60975bd59fa1
 ---
 # Partial Classes and Methods (C# Programming Guide)
-It is possible to split the definition of a [class](../../../csharp/language-reference/keywords/class.md) or a [struct](../../../csharp/language-reference/keywords/struct.md), an [interface](../../../csharp/language-reference/keywords/interface.md) or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.  
+It is possible to split the definition of a [class](../../../csharp/language-reference/keywords/class.md), a [struct](../../../csharp/language-reference/keywords/struct.md), an [interface](../../../csharp/language-reference/keywords/interface.md) or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.  
   
 ## Partial Classes  
  There are several situations when splitting a class definition is desirable:  
@@ -154,9 +154,10 @@ partial void onNameChanged()
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
- [partial (Type)](../../../csharp/language-reference/keywords/partial-type.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
+- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
+- [partial (Type)](../../../csharp/language-reference/keywords/partial-type.md)

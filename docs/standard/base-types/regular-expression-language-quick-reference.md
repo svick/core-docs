@@ -87,8 +87,8 @@ ms.author: "ronpet"
   
 |Assertion|Description|Pattern|Matches|  
 |---------------|-----------------|-------------|-------------|  
-|`^`|The match must start at the beginning of the string or line.|`^\d{3}`|"901" in<br /><br /> "901-333-"|  
-|`$`|The match must occur at the end of the string or before `\n` at the end of the line or string.|`-\d{3}$`|"-333" in<br /><br /> "-901-333"|  
+|`^`|By default, the match must start at the beginning of the string; in multiline mode, it must start at the beginning of the line.|`^\d{3}`|"901" in<br /><br /> "901-333-"|  
+|`$`|By default, the match must occur at the end of the string or before `\n` at the end of the string; in multiline mode, it must occur before the end of the line or before `\n` at the end of the line.|`-\d{3}$`|"-333" in<br /><br /> "-901-333"|  
 |`\A`|The match must occur at the start of the string.|`\A\d{3}`|"901" in<br /><br /> "901-333-"|  
 |`\Z`|The match must occur at the end of the string or before `\n` at the end of the string.|`-\d{3}\Z`|"-333" in<br /><br /> "-901-333"|  
 |`\z`|The match must occur at the end of the string.|`-\d{3}\z`|"-333" in<br /><br /> "-901-333"|  
@@ -210,11 +210,12 @@ ms.author: "ronpet"
 |`(?#` *comment* `)`|Inline comment. The comment ends at the first closing parenthesis.|`\bA(?#Matches words starting with A)\w+\b`|  
 |`#` [to end of line]|X-mode comment. The comment starts at an unescaped `#` and continues to the end of the line.|`(?x)\bA\w+\b#Matches words starting with A`|  
   
-## See Also  
- <xref:System.Text.RegularExpressions?displayProperty=nameWithType>  
- <xref:System.Text.RegularExpressions.Regex>  
- [Regular Expressions](regular-expressions.md)  
- [Regular Expression Classes](the-regular-expression-object-model.md)  
- [Regular Expression Examples](regular-expression-examples.md)  
- [Regular Expressions - Quick Reference (download in Word format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
- [Regular Expressions - Quick Reference (download in PDF format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)
+## See also
+
+- <xref:System.Text.RegularExpressions?displayProperty=nameWithType>  
+- <xref:System.Text.RegularExpressions.Regex>  
+- [Regular Expressions](regular-expressions.md)  
+- [Regular Expression Classes](the-regular-expression-object-model.md)  
+- [Regular Expression Examples](regular-expression-examples.md)  
+- [Regular Expressions - Quick Reference (download in Word format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
+- [Regular Expressions - Quick Reference (download in PDF format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)

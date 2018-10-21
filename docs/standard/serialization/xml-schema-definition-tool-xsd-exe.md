@@ -80,7 +80,7 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
  Classes to XSD  
  Generates an XML schema from a type or types in a runtime assembly file. The generated schema defines the XML format used by `System.Xml.Serialization.XmlSerializer`.  
   
- Xsd.exe only allows you to manipulate XML schemas that follow the XML Schema Definition (XSD) language proposed by the World Wide Web Consortium (W3C). For more information on the XML Schema Definition proposal or the XML standard, see http://w3.org.  
+ Xsd.exe only allows you to manipulate XML schemas that follow the XML Schema Definition (XSD) language proposed by the World Wide Web Consortium (W3C). For more information on the XML Schema Definition proposal or the XML standard, see <https://w3.org>.  
   
 ## Setting Options with an XML File  
  By using the `/parameters` switch, you can specify a single XML file that sets various options. The options you can set depend on how you are using the XSD.exe tool. Choices include generating schemas, generating code files, or generating code files that include `DataSet` features. For example, you can set the `<assembly\>` element to the name of an executable (.exe) or type library (.dll) file when generating a schema, but not when generating a code file. The following XML shows how to use the `<generateSchemas\>` element with a specified executable:  
@@ -215,11 +215,12 @@ xsd /dataset /language:CS XSDSchemaFile.xsd
 xsd myAssembly.dll    
 ```  
   
-## See Also  
- <xref:System.Data.DataSet>  
- <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>  
- [Tools](../../../docs/framework/tools/index.md)      
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)  
- [LINQ to DataSet Overview](../../../docs/framework/data/adonet/linq-to-dataset-overview.md)  
- [Querying Typed DataSets](../../../docs/framework/data/adonet/querying-typed-datasets.md)  
- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)
+## See also
+
+- <xref:System.Data.DataSet>  
+- <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>  
+- [Tools](../../../docs/framework/tools/index.md)      
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)  
+- [LINQ to DataSet Overview](../../../docs/framework/data/adonet/linq-to-dataset-overview.md)  
+- [Querying Typed DataSets](../../../docs/framework/data/adonet/querying-typed-datasets.md)  
+- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)

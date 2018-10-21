@@ -88,7 +88,7 @@ public abstract class Entity
     public static bool operator ==(Entity left, Entity right)
     {
         if (Object.Equals(left, null))
-            return (Object.Equals(right, null)) ? true : false;
+            return (Object.Equals(right, null));
         else
             return left.Equals(right);
     }
@@ -138,5 +138,5 @@ public interface IRepository<T> where T : IAggregateRoot
 
 
 >[!div class="step-by-step"]
-[Previous] (net-core-microservice-domain-model.md)
-[Next] (implement-value-objects.md)
+[Previous](net-core-microservice-domain-model.md)
+[Next](implement-value-objects.md)

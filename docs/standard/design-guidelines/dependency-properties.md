@@ -37,7 +37,7 @@ A dependency property (DP) is a regular property that stores its value in a prop
   
  A classic example of an attached property is the <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=nameWithType> property. The property represents Button’s (not Grid’s) column position, but it is only relevant if the Button is contained in a Grid, and so it's "attached" to Buttons by Grids.  
   
-```  
+```xaml
 <Grid>  
     <Grid.ColumnDefinitions>  
         <ColumnDefinition />  
@@ -51,7 +51,7 @@ A dependency property (DP) is a regular property that stores its value in a prop
   
  The definition of an attached property looks mostly like that of a regular dependency property, except that the accessors are represented by static Get and Set methods:  
   
-```  
+```csharp
 public class Grid {  
   
     public static int GetColumn(DependencyObject obj) {  
@@ -92,6 +92,7 @@ public class Grid {
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
- [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)
+## See also
+
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)

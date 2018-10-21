@@ -10,5 +10,5 @@
 ## [Language-Integrated Query (LINQ)](linq/)
 ## [Object-Oriented Programming](object-oriented-programming.md)
 ## [Reflection](reflection.md)
-## [Serialization (C# )](serialization/)
-## [Threading](threading/)
+## [Serialization (C#)](serialization/)
+## [Threading](threading/index.md)

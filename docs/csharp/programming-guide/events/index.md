@@ -38,8 +38,6 @@ Events enable a [class](../../../csharp/language-reference/keywords/class.md) or
   
 -   [How to:  Implement Interface Events](../../../csharp/programming-guide/events/how-to-implement-interface-events.md)  
   
--   [Thread Synchronization](../../../csharp/programming-guide/concepts/threading/thread-synchronization.md)  
-  
 -   [How to: Use a Dictionary to Store Event Instances](../../../csharp/programming-guide/events/how-to-use-a-dictionary-to-store-event-instances.md)  
   
 -   [How to: Implement Custom Event Accessors](../../../csharp/programming-guide/events/how-to-implement-custom-event-accessors.md)  
@@ -52,9 +50,9 @@ Events enable a [class](../../../csharp/language-reference/keywords/class.md) or
   
  [Delegates and Events](https://msdn.microsoft.com/library/orm-9780596521066-01-17.aspx) in [Learning C# 3.0: Master the fundamentals of C# 3.0](https://msdn.microsoft.com/library/orm-9780596521066-01.aspx)  
   
-## See Also  
- <xref:System.EventHandler>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
- [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
- [Multithreaded Programming with the Event-based Asynchronous Pattern](../../../../docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md)
+## See Also
+
+- <xref:System.EventHandler>  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+- [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  

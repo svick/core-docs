@@ -7,7 +7,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "memory-mapped files"
-  - "inter-process communiation"
+  - "inter-process communication"
 ms.assetid: a483d1b5-64aa-45b6-86ef-11b859f7f02e
 author: "mairaw"
 ms.author: "mairaw"
@@ -138,5 +138,6 @@ Process C says: True
  [!code-csharp[System.IO.MemoryMappedFiles_IPC_B#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_b/cs/program.cs#1)]
  [!code-vb[System.IO.MemoryMappedFiles_IPC_B#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_b/vb/program.vb#1)]  
   
-## See Also  
- [File and Stream I/O](../../../docs/standard/io/index.md)
+## See also
+
+- [File and Stream I/O](../../../docs/standard/io/index.md)

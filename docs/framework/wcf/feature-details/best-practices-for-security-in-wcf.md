@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "best practices [WCF], security"
 ms.assetid: 3639de41-1fa7-4875-a1d7-f393e4c8bd69
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Best Practices for Security in WCF
 The following sections list the best practices to consider when creating secure applications using Windows Communication Foundation (WCF). For more information about security, see [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md), [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md), and [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md).  
@@ -27,9 +26,7 @@ The following sections list the best practices to consider when creating secure 
 -   the use of stronger cryptographic algorithms, and  
   
 -   the greater difficulty of utilizing forwarded X509 credentials.  
-  
- For an overview of NTLM forwarding attacks, go to [http://msdn.microsoft.com/msdnmag/issues/06/09/SecureByDesign/default.aspx](http://go.microsoft.com/fwlink/?LinkId=109571).  
-  
+   
 ## Always Revert After Impersonation  
  When using APIs that enable impersonation of a client, be sure to revert to the original identity. For example, when using the <xref:System.Security.Principal.WindowsIdentity> and <xref:System.Security.Principal.WindowsImpersonationContext>, use the C# `using` statement or the Visual Basic`Using` statement, as shown in the following code. The <xref:System.Security.Principal.WindowsImpersonationContext> class implements the <xref:System.IDisposable> interface, and therefore the common language runtime (CLR) automatically reverts to the original identity once the code leaves the `using` block.  
   

@@ -3,7 +3,7 @@ title: Target frameworks
 description: Learn about target frameworks for .NET Core apps and libraries.
 author: richlander
 ms.author: mairaw
-ms.date: 04/16/2018
+ms.date: 05/31/2018
 ms.custom: "updateeachrelease"
 ms.technology: dotnet-standard
 ---
@@ -26,7 +26,7 @@ The following table defines the most common target frameworks, how they're refer
 | Target Framework      | Latest <br/> Stable Version | Target Framework Moniker (TFM) | Implemented <br/> .NET Standard Version |
 | :-------------------: | :-------------------------: | :----------------------------: | :-------------------------------------: |
 | .NET Standard         | 2.0                         | netstandard2.0                 | N/A                                     |
-| .NET Core Application | 2.0                         | netcoreapp2.0                  | 2.0                                     |
+| .NET Core             | 2.1                         | netcoreapp2.1                  | 2.0                                     |
 | .NET Framework        | 4.7.2                       | net472                         | 2.0                                     |
 
 ## Supported target framework versions
@@ -125,10 +125,10 @@ The following target frameworks are deprecated. Packages targeting these target 
 
 ## See also
 
-[Packages, Metapackages and Frameworks](../core/packages.md)  
-[Developing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)  
-[.NET Standard](net-standard.md)  
-[.NET Core Versioning](../core/versions/index.md)  
-[dotnet/standard GitHub repository](https://github.com/dotnet/standard)  
-[NuGet Tools GitHub Repository](https://github.com/joelverhagen/NuGetTools)  
-[Framework Profiles in .NET](https://blog.stephencleary.com/2012/05/framework-profiles-in-net.html)
+- [Packages, Metapackages and Frameworks](../core/packages.md)  
+- [Developing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)  
+- [.NET Standard](net-standard.md)  
+- [.NET Core Versioning](../core/versions/index.md)  
+- [dotnet/standard GitHub repository](https://github.com/dotnet/standard)  
+- [NuGet Tools GitHub Repository](https://github.com/joelverhagen/NuGetTools)  
+- [Framework Profiles in .NET](https://blog.stephencleary.com/2012/05/framework-profiles-in-net.html)

@@ -3,7 +3,7 @@ title: dotnet pack command - .NET Core CLI
 description: The dotnet pack command creates NuGet packages for your .NET Core project.
 author: mairaw
 ms.author: mairaw
-ms.date: 03/10/2018
+ms.date: 05/29/2018
 ---
 # dotnet pack
 
@@ -16,16 +16,15 @@ ms.date: 03/10/2018
 ## Synopsis
 
 # [.NET Core 2.x](#tab/netcore2x)
-
 ```
 dotnet pack [<PROJECT>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--no-build] [--no-dependencies]
     [--no-restore] [-o|--output] [--runtime] [-s|--serviceable] [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
 ```
-
 # [.NET Core 1.x](#tab/netcore1x)
 ```
-dotnet pack [<PROJECT>] [-c|--configuration] [--include-source] [--include-symbols] [--no-build] [-o|--output] [-s|--serviceable] [-v|--verbosity] [--version-suffix]
+dotnet pack [<PROJECT>] [-c|--configuration] [--include-source] [--include-symbols] [--no-build] [-o|--output]
+    [-s|--serviceable] [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
 ```
 ---
@@ -36,9 +35,9 @@ The `dotnet pack` command builds the project and creates NuGet packages. The res
 
 NuGet dependencies of the packed project are added to the *.nuspec* file, so they're properly resolved when the package is installed. Project-to-project references aren't packaged inside the project. Currently, you must have a package per project if you have project-to-project dependencies.
 
-By default, `dotnet pack` builds the project first. If you wish to avoid this behavior, pass the `--no-build` option. This is often useful in Continuous Integration (CI) build scenarios where you know the code was previously built.
+By default, `dotnet pack` builds the project first. If you wish to avoid this behavior, pass the `--no-build` option. This option is often useful in Continuous Integration (CI) build scenarios where you know the code was previously built.
 
-You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet metadata properties](csproj.md#nuget-metadata-properties) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild /p switch for a couple of different scenarios.
+You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet metadata properties](csproj.md#nuget-metadata-properties) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild -p switch for a couple of different scenarios.
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
@@ -46,7 +45,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 `PROJECT`
 
-The project to pack. It's either a path to a [csproj file](csproj.md) or to a directory. If omitted, it defaults to the current directory.
+The project to pack. It's either a path to a [csproj file](csproj.md) or to a directory. If not specified, it defaults to the current directory.
 
 ## Options
 
@@ -57,7 +56,8 @@ The project to pack. It's either a path to a [csproj file](csproj.md) or to a di
 Defines the build configuration. The default value is `Debug`.
 
 `--force`
-Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting the *project.assets.json* file.
+
+Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
 `-h|--help`
 
@@ -73,7 +73,7 @@ Generates the symbols `nupkg`.
 
 `--no-build`
 
-Doesn't build the project before packing.
+Doesn't build the project before packing. It also implicit sets the `--no-restore` flag.
 
 `--no-dependencies`
 
@@ -81,13 +81,13 @@ Ignores project-to-project references and only restores the root project.
 
 `--no-restore`
 
-Doesn't perform an implicit restore when running the command.
+Doesn't execute an implicit restore when running the command.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Places the built packages in the directory specified.
 
-`-r|--runtime <RUNTIME_IDENTIFIER>`
+`--runtime <RUNTIME_IDENTIFIER>`
 
 Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
 
@@ -102,6 +102,14 @@ Defines the value for the `$(VersionSuffix)` MSBuild property in the project.
 `-v|--verbosity <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+
+> [!NOTE]
+> Web projects aren't packable by default. To override the default behavior, add the following property to your *.csproj* file:
+> ```xml
+> <PropertyGroup>
+>    <IsPackable>true</IsPackable>
+> </PropertyGroup>
+> ```
 
 # [.NET Core 1.x](#tab/netcore1x)
 
@@ -167,11 +175,11 @@ With the project's version suffix configured as `<VersionSuffix>$(VersionSuffix)
 
 Set the package version to `2.1.0` with the `PackageVersion` MSBuild property:
 
-`dotnet pack /p:PackageVersion=2.1.0`
+`dotnet pack -p:PackageVersion=2.1.0`
 
 Pack the project for a specific [target framework](../../standard/frameworks.md):
 
-`dotnet pack /p:TargetFrameworks=net45`
+`dotnet pack -p:TargetFrameworks=net45`
 
 Pack the project and use a specific runtime (Windows 10) for the restore operation (.NET Core SDK 2.0 and later versions):
 

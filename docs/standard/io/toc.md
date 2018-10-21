@@ -1,4 +1,5 @@
 # [File and Stream I/O](index.md)
+## [File path formats on Windows systems](file-path-formats.md)
 ## [Common I/O Tasks](common-i-o-tasks.md)
 ### [How to: Copy Directories](how-to-copy-directories.md)
 ### [How to: Enumerate Directories and Files](how-to-enumerate-directories-and-files.md)
@@ -13,6 +14,7 @@
 ### [Composing Streams](composing-streams.md)
 ### [How to: Convert Between .NET Framework Streams and Windows Runtime Streams](how-to-convert-between-dotnet-streams-and-winrt-streams.md)
 ## [Asynchronous File I/O](asynchronous-file-i-o.md)
+## [Handling I/O errors](handling-io-errors.md)
 ## [Isolated Storage](isolated-storage.md)
 ### [Types of Isolation](types-of-isolation.md)
 ### [How to: Obtain Stores for Isolated Storage](how-to-obtain-stores-for-isolated-storage.md)

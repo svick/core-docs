@@ -22,29 +22,13 @@ its functionality for any class derived from `EventArgs`. That
 functionality is easier to create in a specific derived class. That
 effectively means that deriving from System.EventArgs is a constraint
 that limits your designs, but does not provide any additional benefit.
-In fact, you can changes the definitions of `FileFoundArgs` and
+In fact, you can change the definitions of `FileFoundArgs` and
 `SearchDirectoryArgs` so that they do not derive from `EventArgs`.
 The program will work exactly the same.
 
-You could also change the `SearchDirectoryArgs` to a struct, if you
-also make one more change:
+You could also change the `SearchDirectoryArgs` to a struct, if you make one more change:
 
-```csharp  
-internal struct SearchDirectoryArgs  
-{  
-    internal string CurrentSearchDirectory { get; }  
-    internal int TotalDirs { get; }  
-    internal int CompletedDirs { get; }  
-    
-    internal SearchDirectoryArgs(string dir, int totalDirs, 
-        int completedDirs) : this()  
-    {  
-        CurrentSearchDirectory = dir;  
-        TotalDirs = totalDirs;  
-        CompletedDirs = completedDirs;  
-    }  
-}  
-```   
+[!code-csharp[SearchDir](../../samples/csharp/events/Program.cs#DeclareSearchEvent "Define search directory event")]
 
 The additional change is to call the default constructor before
 entering the constructor that initializes all the fields. Without

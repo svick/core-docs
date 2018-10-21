@@ -673,14 +673,14 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
             {  
                 List<string> urls = new List<string>   
                 {   
-                    "http://msdn.microsoft.com/library/hh191443.aspx",  
-                    "http://msdn.microsoft.com/library/aa578028.aspx",  
-                    "http://msdn.microsoft.com/library/jj155761.aspx",  
-                    "http://msdn.microsoft.com/library/hh290140.aspx",  
-                    "http://msdn.microsoft.com/library/hh524395.aspx",  
-                    "http://msdn.microsoft.com/library/ms404677.aspx",  
-                    "http://msdn.microsoft.com",  
-                    "http://msdn.microsoft.com/library/ff730837.aspx"  
+                    "https://msdn.microsoft.com/library/hh191443.aspx",  
+                    "https://msdn.microsoft.com/library/aa578028.aspx",  
+                    "https://msdn.microsoft.com/library/jj155761.aspx",  
+                    "https://msdn.microsoft.com/library/hh290140.aspx",  
+                    "https://msdn.microsoft.com/library/hh524395.aspx",  
+                    "https://msdn.microsoft.com/library/ms404677.aspx",  
+                    "https://msdn.microsoft.com",  
+                    "https://msdn.microsoft.com/library/ff730837.aspx"  
                 };  
                 return urls;  
             }  
@@ -691,8 +691,8 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
                 // to be used with a monospaced font, such as Lucida Console or   
                 // Global Monospace.  
   
-                // Strip off the "http://".  
-                var displayURL = url.Replace("http://", "");  
+                // Strip off the "https://".  
+                var displayURL = url.Replace("https://", "");  
                 // Display position in the URL list, the URL, and the number of bytes.  
                 ResultsTextBox.Text += string.Format("\n{0}. {1,-58} {2,8}", pos, displayURL, content.Length);  
             }  
@@ -704,6 +704,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
 12. Make the changes from [Disable the Start Button](#BKMK_DisableTheStartButton), [Cancel and Restart the Operation](#BKMK_CancelAndRestart), or [Run Multiple Operations and Queue the Output](#BKMK_RunMultipleOperations) to handle the reentrancy.  
   
-## See Also  
- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
+## See Also
+
+- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
+- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
